@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="rh_ensao.list">
+      <field name="name">RH ENSAO list</field>
+      <field name="model">rh_ensao.rh_ensao</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="rh_ensao.action_window">
+      <field name="name">RH ENSAO window</field>
+      <field name="res_model">rh_ensao.rh_ensao</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="rh_ensao.action_server">
+      <field name="name">RH ENSAO server</field>
+      <field name="model_id" ref="model_rh_ensao_rh_ensao"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="RH ENSAO" id="rh_ensao.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="rh_ensao.menu_1" parent="rh_ensao.menu_root"/>
+    <menuitem name="Menu 2" id="rh_ensao.menu_2" parent="rh_ensao.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="rh_ensao.menu_1_list" parent="rh_ensao.menu_1"
+              action="rh_ensao.action_window"/>
+    <menuitem name="Server to list" id="rh_ensao" parent="rh_ensao.menu_2"
+              action="rh_ensao.action_server"/>
+-->
+  </data>
+</odoo>
