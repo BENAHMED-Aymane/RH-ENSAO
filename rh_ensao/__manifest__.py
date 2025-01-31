@@ -24,8 +24,8 @@ Le module de gestion des ressources humaines (RH) de l'ENSAO est une solution co
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
         'security/rh_security.xml',
+        'security/ir.model.access.csv',
         'views/employe.xml',
         #'views/templates.xml',
     ],
